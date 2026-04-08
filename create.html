@@ -1,0 +1,183 @@
+<script src="https://unpkg.com/blockly/blockly.min.js"></script>
+<script src="https://unpkg.com/blockly/blocks.min.js"></script>
+<script src="https://unpkg.com/blockly/javascript.min.js"></script>
+<html>
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif, sans-serif;
+        margin: 20px;
+        background-color: white;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        box-sizing: border-box;
+        padding: 10px;
+        font-family: 'Helvetica Neue', sans-serif, Helvetica, sans-serif, sans-serif;
+        background-color: hsla(194, 100%, 50%, 1);
+        color: white;
+    }
+    .centeredtext {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .big{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .searchbox {
+        margin-left: auto;
+        background-color: rgb(68, 133, 208);
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+    }
+    .smelly{
+        font-size: 30px;
+        font-weight: bold;
+        color: green;
+        font-style: italic;
+        white-space: nowrap;
+    }
+    .logo {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+    }
+</style>
+<body>
+    <header>
+        <div class="logo">P</div>
+        <h3><a href="index.html">penguinmod 2!!! | <a href="create.html">create</a></h3>
+        <div class="searchbox">
+            <input type="text" placeholder="Search...">
+            <a href="signin.html">| sign in</a> | <a href="signin.html">sign up</a>
+        </div>
+    </header>
+<blockly>
+     <button id="runBtn">Run</button>
+<div id="blocklyDiv"></div>
+
+    <xml id="toolbox" style="display: none">
+      <category name="Logic" colour="090">
+        <block type="controls_if"></block>
+        <block type="logic_compare"></block>
+        <block type="logic_operation"></block>
+        <block type="logic_negate"></block>
+        <block type="logic_boolean"></block>
+        <block type="logic_null"></block>
+        <block type="logic_ternary"></block>
+      </category>
+
+      <category name="Loops" colour="990">
+        <block type="controls_repeat_ext"></block>
+        <block type="controls_whileUntil"></block>
+        <block type="controls_for"></block>
+        <block type="controls_forEach"></block>
+        <block type="controls_flow_statements"></block>
+      </category>
+
+      <category name="Math" colour="099">
+        <block type="math_number"></block>
+        <block type="math_arithmetic"></block>
+        <block type="math_single"></block>
+        <block type="math_trig"></block>
+        <block type="math_constant"></block>
+        <block type="math_number_property"></block>
+        <block type="math_round"></block>
+        <block type="math_on_list"></block>
+        <block type="math_modulo"></block>
+        <block type="math_constrain"></block>
+        <block type="math_random_int"></block>
+        <block type="math_random_float"></block>
+      </category>
+
+      <category name="Text" colour="096">
+        <block type="text"></block>
+        <block type="text_join"></block>
+        <block type="text_append"></block>
+        <block type="text_length"></block>
+        <block type="text_isEmpty"></block>
+        <block type="text_indexOf"></block>
+        <block type="text_charAt"></block>
+        <block type="text_getSubstring"></block>
+        <block type="text_changeCase"></block>
+        <block type="text_trim"></block>
+        <block type="text_print"></block>
+        <block type="text_prompt_ext"></block>
+      </category>
+
+      <category name="Lists" colour="930">
+        <block type="lists_create_empty"></block>
+        <block type="lists_create_with"></block>
+        <block type="lists_repeat"></block>
+        <block type="lists_length"></block>
+        <block type="lists_isEmpty"></block>
+        <block type="lists_indexOf"></block>
+        <block type="lists_getIndex"></block>
+        <block type="lists_setIndex"></block>
+        <block type="lists_getSublist"></block>
+      </category>
+      <category name="Variables" custom="VARIABLE" colour="950"></category>
+      <category name="Functions" custom="PROCEDURE" colour="909"></category>
+    </xml>
+
+    <script>
+      const workspace = Blockly.inject('blocklyDiv', {
+        toolbox: document.getElementById('toolbox'),
+        renderer: 'zelos'
+      });
+
+      document.getElementById('runBtn').onclick = () => {
+        const code = Blockly.JavaScript.workspaceToCode(workspace);
+        try {
+          eval(code);
+        } catch (e) {
+          console.error(e);
+          alert("Error: " + e);
+        }
+      };
+    </script>
+</blockly>
+<div class="centered text"> have fun with these blocks</div>
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="alert('clackthor is listening to you')" alt="" />
+<img src="costume2 (1).svg" onclick="location.href='clackthor.html'" alt="" />
+
+</body>
+</html>
